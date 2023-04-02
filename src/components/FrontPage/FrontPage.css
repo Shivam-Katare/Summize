@@ -1,0 +1,173 @@
+@import url("https://use.fontawesome.com/releases/v5.0.2/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.intro-page {
+  max-width: 70rem;
+  background-color: rgb(7 16 45);
+  background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid rgb(84 90 106);
+  height: 30rem;
+  margin: 6rem;
+}
+
+.page-title {
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+  font-weight: 100;
+  text-shadow: 0px 1px 0px #000000, 0px 2px 0px #000000, 0px 3px 0px #000000, 0px 4px 0px #000000, 0px 5px 10px rgb(0 0 0);
+  font-size: 46px;
+  color: #ffffff;
+}
+
+.tagline {
+  font-family: 'Changa One', cursive;
+}
+p.tagline-part-1 {
+  font-size: 68px;
+  margin-left: -176px;
+}
+
+p.tagline-part-2 {
+  font-size: 73px;
+  margin-top: -3rem;
+}
+
+.tag-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  justify-items: start;
+}
+
+.app-summary {
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+/* Media Query */
+
+@media (max-width: 1150px) {
+  .tag-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: -6px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+
+  p.tagline-part-1 {
+    font-size: 55px;
+  }
+
+  p.tagline-part-2 {
+    font-size: 52px;
+    margin-right: 81px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .girl-image {
+    width: 400px;
+  }
+
+  .intro-page {
+    margin: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .girl-image {
+    width: 300px;
+  }
+
+  p.tagline-part-1 {
+    font-size: 48px;
+  }
+
+  p.tagline-part-2 {
+    font-size: 44px;
+    margin-right: 98px;
+  }
+
+  .tag-image-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+}
+
+@media(max-width: 790px) {
+  .girl-image {
+    width: 200px;
+  }
+
+  .intro-page {
+    margin: 0rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .app-summary {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  p.tagline-part-1 {
+    font-size: 36px;
+  }
+
+  p.tagline-part-2 {
+    font-size: 32px;
+    margin-right: 128px;
+  }
+
+  .intro-page {
+    height: 23rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  p.tagline-part-1 {
+    font-size: 36px;
+    margin-left: 0px;
+  }
+
+  p.tagline-part-2 {
+    font-size: 32px;
+    margin-left: 116px;
+  }
+
+  .tag-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .girl-image {
+    visibility: hidden;
+  }
+
+  .app-summary {
+    font-size: 10px;
+    padding: 0px 15px;
+  }
+}
