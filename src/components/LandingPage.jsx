@@ -42,7 +42,6 @@ function LandingPage({ doStuff, setInput, result, isLoading }) {
           ) : (
             result.length > 0 && (
               <div>
-                <h3>Summary:</h3>
                 {result.split("\n").map((line, index) => (
                   <p key={index}>{line}</p>
                 ))}
