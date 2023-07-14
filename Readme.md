@@ -1,7 +1,15 @@
 Summize App
 ===========
 
-The Summize app is a powerful tool that simplifies complex and lengthy text into a concise and easy-to-understand summary. With just a few clicks, Summize can help you quickly digest important information and save you valuable time.
+The [Summize app](https://summize-summary.vercel.app/) is a powerful tool that simplifies complex and lengthy text into a concise and easy-to-understand summary. With just a few clicks, Summize can help you quickly digest important information and save you valuable time.
+
+Preview
+--------
+
+
+https://github.com/Shivam-Katare/Summize/assets/91705825/a6ff64c8-e97f-4a39-bd65-178ab9173704
+
+
 
 Features
 --------
