@@ -8,7 +8,7 @@ const FrontPage = () => {
     <>
       <NavBar />
       <div className="intro-page">
-        <h1 className="page-title">SUMMIZE</h1>
+        <h1 className="page-title"><a href='/' style={{color: "white", textDecoration: "none"}}>SUMMIZE</a></h1>
         <div className="summary-container">
           <div className="tag-image-container">
             <div className="tagline">

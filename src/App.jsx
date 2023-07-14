@@ -15,33 +15,36 @@ function App() {
 
   const doStuff = async () => {
     setIsLoading(true);
-  
     const inputTrimmed = input.trim();
-  
-    if (inputTrimmed.length < 10 || !/[a-zA-Z]/.test(inputTrimmed)) {
-      setResult("Please type correct text. The text must be more than ten words.");
+    
+    if (inputTrimmed.length < 10) {
+      setResult("Please enter text with more than ten words.");
       setIsLoading(false);
       return;
     }
-  
+    
     try {
       const response = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: `${input}\n\nSummarize the above text to 30% of its length.`,
-        temperature: 0,
-        max_tokens: Math.floor(inputTrimmed.split(' ').length * 0.3),
-        top_p: 1,
+        prompt: `${input}\n\n Tl;dr:`,
+        temperature: 0.7,
+        max_tokens: 120,
+        top_p: 0.9,
         frequency_penalty: 0.0,
-        presence_penalty: 0.0,
+        presence_penalty: 1,
       });
       setResult(response.data.choices[0].text);
     } catch (error) {
-      setResult("Error: " + "Please enter valid text and be sure it is longer than 10 words.");
+      if (error?.response?.data?.error?.message === "Missing input prompt") {
+        setResult("Please enter text with more than ten words.");
+      } else {
+        setResult("Error: Please enter valid text.");
+      }
     } finally {
       setIsLoading(false);
     }
   };
-
+  
   return (
     <div className="App">
       <FrontPage />
