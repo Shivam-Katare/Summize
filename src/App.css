@@ -4,7 +4,6 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-  /* background-color: azure; */
 }
 
 .heading {
@@ -72,18 +71,13 @@
 
 #style-4::-webkit-scrollbar {
   width: 5px;
-  /* Decrease width */
   background-color: #f5f5f500;
 }
 
 #style-4::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0);
-  /* Decrease opacity */
   border: 1px solid #55555500;
 }
-
-/* api new key */
-
 
 .input-container {
   position: relative;
