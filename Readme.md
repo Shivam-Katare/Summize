@@ -28,7 +28,7 @@ To get started with Summize, follow these simple steps:
 2.  Install the dependencies using `npm install`
 3.  Create a `.env` file and set your OpenAI API key using `VITE_Open_AI_Key=YOUR_API_KEY`
 4.  Start the app using `npm run dev`
-5.  Open the app in your browser at `http://localhost:3000`
+5.  Open the app in your browser at `http://127.0.0.1:5173/`
 
 Usage
 -----
